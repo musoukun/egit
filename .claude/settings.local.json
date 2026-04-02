@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(PYTHONIOENCODING=utf-8 python:*)",
+      "Bash(PYTHONUTF8=1 python:*)",
+      "Bash(pip show:*)",
+      "Bash(python \"C:/Users/waros/.claude/skills/webp-to-jpg/scripts/convert.py\" \"D:/develop/three-star-zoo-2026/rule/ExportBlock-8449b0e4-c0ec-4d81-829f-41c7f4914378-Part-1/s-2400x1600_v-frms_webp_3577c4dc-5eab-48ba-9c1b-c36e191ce25e_regular.webp\" -o \"/tmp/img1.jpg\")",
+      "Bash(python \"C:/Users/waros/.claude/skills/webp-to-jpg/scripts/convert.py\" \"D:/develop/three-star-zoo-2026/rule/ExportBlock-8449b0e4-c0ec-4d81-829f-41c7f4914378-Part-1/s-2400x1600_v-frms_webp_f73d0b7a-8a9e-42ed-91f0-ad019390fa90_regular.webp\" -o \"/tmp/img2.jpg\")",
+      "Bash(python \"C:/Users/waros/.claude/skills/webp-to-jpg/scripts/convert.py\" \"D:/develop/three-star-zoo-2026/rule/ExportBlock-8449b0e4-c0ec-4d81-829f-41c7f4914378-Part-1/s-2400x1350_v-frms_webp_b8144239-ce77-452a-97d9-ac36c5800b29_regular.webp\" -o \"/tmp/img3.jpg\")",
+      "Bash(python \"C:/Users/waros/.claude/skills/webp-to-jpg/scripts/convert.py\" \"D:/develop/three-star-zoo-2026/rule/ExportBlock-8449b0e4-c0ec-4d81-829f-41c7f4914378-Part-1/s-2400x1600_v-frms_webp_0ed3078a-2627-4236-9a05-fd7fc6557110_regular.webp\" -o \"/tmp/img4.jpg\")",
+      "Bash(python \"C:/Users/waros/.claude/skills/webp-to-jpg/scripts/convert.py\" \"D:/develop/three-star-zoo-2026/rule/ExportBlock-8449b0e4-c0ec-4d81-829f-41c7f4914378-Part-1/s-2400x1600_v-frms_webp_761a19d7-9dc2-4060-af15-f719497dd66b_regular.webp\" -o \"/tmp/img5.jpg\")",
+      "Bash(echo $TEMP)",
+      "Read(//c/Users/waros/AppData/Local/Temp/**)",
+      "Bash(npx tsc:*)",
+      "Bash(find D:/develop/three-star-zoo-2026 -name *result* -o -name *Result* -o -name *burst* -o -name *Burst* -o -name *slide* -o -name *animation*)",
+      "Bash(find D:/develop/three-star-zoo-2026 -type d -not -path */node_modules/* -not -path */.git/*)",
+      "Bash(python:*)",
+      "Bash(start:*)",
+      "WebFetch(domain:gist.github.com)",
+      "Bash(gh repo:*)"
+    ],
+    "defaultMode": "bypassPermissions"
+  }
+}
