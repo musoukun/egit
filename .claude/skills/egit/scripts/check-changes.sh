@@ -9,6 +9,15 @@ if ! git rev-parse --is-inside-work-tree &>/dev/null; then
 fi
 
 GIT_DIR=$(git rev-parse --git-dir 2>/dev/null)
+
+# --- 間引き（3回に1回だけチェック） ---
+COUNT_FILE="$GIT_DIR/egit-check-count.txt"
+COUNT=$(($(cat "$COUNT_FILE" 2>/dev/null || echo 0) + 1))
+echo "$COUNT" > "$COUNT_FILE"
+if [ $((COUNT % 3)) -ne 0 ]; then
+  exit 0
+fi
+
 BASELINE_FILE="$GIT_DIR/egit-baseline.txt"
 
 # --- ベースライン管理 ---

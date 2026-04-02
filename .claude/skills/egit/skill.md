@@ -8,6 +8,12 @@ description: >
 user-invocable: true
 allowed-tools: Bash(git *), Bash(gh *)
 argument-hint: "[save|new|合流|status|init]"
+hooks:
+  UserPromptSubmit:
+    - matcher: ""
+      hooks:
+        - type: command
+          command: "bash ${CLAUDE_SKILL_DIR}/scripts/check-changes.sh"
 ---
 
 # egit - かんたんバージョン管理
