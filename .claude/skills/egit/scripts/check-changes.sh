@@ -14,7 +14,7 @@ GIT_DIR=$(git rev-parse --git-dir 2>/dev/null)
 COUNT_FILE="$GIT_DIR/egit-check-count.txt"
 COUNT=$(($(cat "$COUNT_FILE" 2>/dev/null || echo 0) + 1))
 echo "$COUNT" > "$COUNT_FILE"
-if [ $((COUNT % 3)) -ne 0 ]; then
+if [ $((COUNT % 6)) -ne 0 ]; then
   exit 0
 fi
 
